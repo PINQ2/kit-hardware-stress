@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 
 # Build gpu-burn utility
 WORKDIR /opt
-RUN git clone https://github.com && \
+RUN git clone https://github.com/wilicc/gpu-burn && \
     cd gpu-burn && \
     make
 
