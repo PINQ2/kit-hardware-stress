@@ -12,7 +12,7 @@ if [ -n "$TIME" ]; then STRESS_ARGS="$STRESS_ARGS --timeout $TIME"; fi
 
 if [ -n "$STRESS_ARGS" ]; then
     echo "Starting CPU/RAM stress with args: $STRESS_ARGS"
-    stress-ng $STRESS_ARGS
+    stress-ng --temp-path /tmp/outputs $STRESS_ARGS
 fi
 
 
