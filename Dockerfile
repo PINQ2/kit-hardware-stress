@@ -1,4 +1,4 @@
-FROM alpine:3.18
+FROM ubuntu:24.04
 
 # Install stress-ng for CPU/RAM and gpu-burn for GPU testing
 RUN apt-get update && apt-get install -y \
